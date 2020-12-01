@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'dotenv'
 gem 'rspec'
 gem 'guard'
 gem 'guard-rspec'

@@ -20,11 +20,13 @@ class Mortgage
   end
 
   def self.current
-    self.new(apr: 3.375, loan_amount: 370_000, duration: (12*29), value: 470_000)
+    self.new(apr: CURRENT_APR, loan_amount: CURRENT_LOAN_AMOUNT, duration: CURRENT_DURATION, value: CURRENT_VALUE)
   end
 
+  #
+
   def self.refi
-    self.new(apr: 2.875, loan_amount: 370_000, duration: (12*20), value: 470_000)
+    self.new(apr: REFI_APR, loan_amount: REFI_LOAN_AMOUNT, duration: REFI_DURATION, value: REFI_VALUE)
   end
 
   def run(years: nil, payments: nil, no_table: false, extra: nil)
